@@ -13,6 +13,12 @@ A Streamlit app that lets a user upload an image and get image classification pr
 
 This app uses `mobilenet_v3_large` with pretrained `MobileNet_V3_Large_Weights.DEFAULT` from `torchvision.models`.
 
+## Notes
+
+- supported image types: jpg, jpeg, png
+- the model uses ImageNet categories, so some predictions may be unexpected or funny
+- the first run may download model weights
+
 ## How to run
 
 1. create and activate a virtual environment
@@ -22,12 +28,5 @@ This app uses `mobilenet_v3_large` with pretrained `MobileNet_V3_Large_Weights.D
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
-## Notes
-
-- supported image types: jpg, jpeg, png
-- the model uses ImageNet categories, so some predictions may be unexpected or funny
-- the first run may download model weights
-
 
 
