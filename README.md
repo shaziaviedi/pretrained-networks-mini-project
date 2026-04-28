@@ -19,6 +19,14 @@ This app uses `mobilenet_v3_large` with pretrained `MobileNet_V3_Large_Weights.D
 2. install the packages
 3. run the app with Streamlit
 
+## Notes
+
+- supported image types: jpg, jpeg, png
+- the model uses ImageNet categories, so some predictions may be unexpected or funny
+- the first run may download model weights
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+
+
